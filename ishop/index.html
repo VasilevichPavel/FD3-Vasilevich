@@ -1,0 +1,33 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+  <meta charset="utf-8" />
+  <title>Интернет-магазин</title>
+</head> 
+<body> 
+  <div id="container"></div> 
+      
+  <script src="https://unpkg.com/react@15/dist/react.js"></script> 
+  <script src="https://unpkg.com/react-dom@15/dist/react-dom.js"></script> 
+      
+  <script src="ProductsBlock.js"></script>
+  <link rel="stylesheet" type="text/css" href="ProductsBlock.css" />
+
+  <script>
+
+    var shopNameText='У Павлодара';
+    var productsArr=[ 
+      {productName: 'Приправы от Ермака', code: 1, cost: 10.11, photoUrl: 'qwe.qwe', inStock:43}, 
+      {productName: 'Мясо ягненка', code: 2, cost: 45.6, photoUrl: 'asd.asd', inStock:55}, 
+      {productName: 'Пельмени из бабушки Ани', code: 3, cost: 7.9, photoUrl: 'ert.ert', inStock:21} 
+    ];
+
+    ReactDOM.render(
+      React.createElement(ProductsBlock,{shopName:shopNameText,products:productsArr}), 
+      document.getElementById('container') 
+    );
+
+  </script>
+
+</body> 
+</html>
