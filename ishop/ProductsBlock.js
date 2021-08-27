@@ -17,8 +17,10 @@ var ProductsBlock = React.createClass({
             React.DOM.span({className:'InStock'}, v.inStock),
           )
         );
+
       return React.DOM.div({className:'ProductsBlock'}, 
         React.DOM.div({className:'ShopName'}, this.props.shopName),
+        React.DOM.hr(),
         React.DOM.div({className:'Products'}, productCode),
       );
     },

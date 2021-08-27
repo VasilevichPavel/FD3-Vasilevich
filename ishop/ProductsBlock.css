@@ -1,0 +1,50 @@
+.ProductsBlock
+{
+  border: double gray 3px;
+  margin: auto;
+  max-width: 1200px;
+  padding: 3px 7px;
+  background-color: #F0F0F0;
+}
+
+.ProductsBlock .ShopName
+{
+  font-weight: bold;
+}
+
+.ProductsBlock .Products
+{
+  padding-top: 5px;
+  width: 100%;
+}
+
+.ProductsBlock .Products .Product
+{
+  display: flex;
+  padding: 2px 0;
+}
+
+.ProductsBlock .Products .Product .ProductName
+{
+  min-width: 30%;
+  float: right;
+  font-weight: bold;
+}
+
+.ProductsBlock .Products .Product .Cost
+{
+  min-width: 20%;
+  margin-right: 30px;
+}
+
+.ProductsBlock .Products .Product .PhotoUrl
+{
+  min-width: 30%;
+  margin-right: 30px;
+}
+
+.ProductsBlock .Products .Product .InStock
+{
+  min-width: 20%;
+  margin-right: 30px;
+}
